@@ -1,9 +1,10 @@
-def my_collect (empty_array)
+def my_collect (languages)
     empty_array = []
   
     i = 0
-     while i < empty_array.length
-      my_collect(empty_array) do |x|
+     while i < languages.length
+      my_collect(languages) do |language|
+        language.upcase
         counter += 1
       end
     end

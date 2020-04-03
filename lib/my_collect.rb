@@ -8,13 +8,4 @@ def my_collect (empty_array)
     end
  end
  
- def my_collect (languages)
-
-    i = 0
-     while i < languages.length
-      my_collect(empty_array) do |language|
-        language.upcase
-        counter += 1
-      end
-    end
- end
+ 
